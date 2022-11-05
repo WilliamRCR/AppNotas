@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "notas")
-public class NotaEntinty {
+public class NotaEntity {
     @PrimaryKey(autoGenerate = true)
     public int id;
     public String titulo;
@@ -12,7 +12,7 @@ public class NotaEntinty {
     public boolean favorita;
     public String color;
 
-    public NotaEntinty(String titulo, String contenido, boolean favorita, String color) {
+    public NotaEntity(String titulo, String contenido, boolean favorita, String color) {
         this.titulo = titulo;
         this.contenido = contenido;
         this.favorita = favorita;
